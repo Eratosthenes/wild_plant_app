@@ -1,15 +1,40 @@
 <div class="field">
-  <p><strong>Flower Type</strong></p>
-  <%=s.radio_button :flower_type, 'regular' %>
-  <%=s.label :regular %><br>
-  <%=s.radio_button :flower_type, 'daisy-like' %>
-  <%=s.label 'daisy-like' %><br>
-  <%=s.radio_button :flower_type, 'split' %>
-  <%=s.label :split %><br>
-  <%=s.radio_button :flower_type, 'ball' %>
-  <%=s.label :ball %><br>
-  <%=s.radio_button :flower_type, 'pea-like' %>
-  <%=s.label 'pea-like' %><br>
-  <%=s.radio_button :flower_type, 'other' %>
-  <%=s.label :other %><br>
+  <p><strong>Fruit Type</strong></p>
+  <%=s.radio_button :fruit_type, 'fruit' %>
+  <%=s.label :fruit %><br>
+  <%=s.radio_button :fruit_type, 'seed' %>
+  <%=s.label :seed %><br>
+  <%=s.radio_button :fruit_type, 'spore' %>
+  <%=s.label :spore %><br>
+  <%=s.radio_button :fruit_type, 'nut' %>
+  <%=s.label :nut %><br>
+</div>
+
+<div class="field">
+  <p><strong>Fruit Attachment</strong></p>
+  <%=s.radio_button :fruit_attachment, 'stemmed' %>
+  <%=s.label :stemmed %><br>
+  <%=s.radio_button :fruit_attachment, 'stemless' %>
+  <%=s.label :stemless %><br>
+  <%=s.radio_button :fruit_attachment, 'branched stems' %>
+  <%=s.label 'branched stems' %><br>
+  <%=s.radio_button :fruit_attachment, 'leaf back' %>
+  <%=s.label 'leaf back' %><br>
+</div>
+
+<div class="field">
+  <p><strong>Fruit Arrangement</strong></p>
+  <%=s.radio_button :fruit_arrangement, 'solitary' %>
+  <%=s.label :solitary %><br>
+  <%=s.radio_button :fruit_arrangement, 'single cluster' %>
+  <%=s.label 'single cluster' %><br>
+  <%=s.radio_button :fruit_arrangement, 'multiple cluster' %>
+  <%=s.label 'multiple cluster' %><br>
+</div>
+
+<div class="field">
+  <p><strong>Fruit Color</strong></p>
+  <%=s.label :fruit_color %><br>
+  <%=s.select :fruit_color, options_for_select(['red', 'blue', 'white', 'brown',
+    'variable']), include_blank: true %>
 </div>

@@ -1,15 +1,31 @@
 <div class="field">
-  <p><strong>Flower Type</strong></p>
-  <%=s.radio_button :flower_type, 'regular' %>
-  <%=s.label :regular %><br>
-  <%=s.radio_button :flower_type, 'daisy-like' %>
-  <%=s.label 'daisy-like' %><br>
-  <%=s.radio_button :flower_type, 'split' %>
-  <%=s.label :split %><br>
-  <%=s.radio_button :flower_type, 'ball' %>
-  <%=s.label :ball %><br>
-  <%=s.radio_button :flower_type, 'pea-like' %>
-  <%=s.label 'pea-like' %><br>
-  <%=s.radio_button :flower_type, 'other' %>
-  <%=s.label :other %><br>
+  <p><strong>Thorn Type</strong></p>
+  <%= s.radio_button :thorn_type, 'long' %>
+  <%= s.label :long %><br>
+  <%= s.radio_button :thorn_type, 'short' %>
+  <%= s.label :short %><br>
+  <%= s.radio_button :thorn_type, 'hooked at end' %>
+  <%= s.label 'hooked at end' %><br>
+</div>
+
+<div class="field">
+  <p><strong>Thorn Arrangement</strong></p>
+  <%= s.radio_button :thorn_arrangement, 'at node' %>
+  <%= s.label 'at node' %><br>
+  <%= s.radio_button :thorn_arrangement, 'along stem' %>
+  <%= s.label 'along stem' %><br>
+  <%= s.radio_button :thorn_arrangement, 'leaf edge' %>
+  <%= s.label 'leaf edge' %><br>
+  <%= s.radio_button :thorn_arrangement, 'other' %>
+  <%= s.label 'other' %><br>
+</div>
+
+<div class="field">
+  <p><strong>Thorn Stiffness</strong></p>
+  <%= s.radio_button :thorn_stiffness, 'very stiff' %>
+  <%= s.label 'very stiff' %><br>
+  <%= s.radio_button :thorn_stiffness, 'bendable' %>
+  <%= s.label :bendable %><br>
+  <%= s.radio_button :thorn_stiffness, 'hair-like' %>
+  <%= s.label 'hair-like' %><br>
 </div>
