@@ -1,9 +1,16 @@
 <%= javascript_include_tag 'multistep' %>
 <h1>Features</h1>
 
+<!-- having the <p> nested causes text to disappear on hover, but getting
+rid of p's causes logic issues with jQuery
+may want to just get rid of scaffold css altogether -->
 <div id="features">
-  <a href="#"><p>Leaves</p></a>
-  <a href="#"><p>Bark</p></a>
+  <a href="#">Leaves</a>
+  <a href="#">Flowers</a>
+  <a href="#">Fruit</a>
+  <a href="#">Bark</a>
+  <a href="#">Thorns</a>
+  <a href="#">Tendril</a>
 </div>
 
 <!--
@@ -14,98 +21,18 @@
 :tendril_type, :tendril_attachment, :tendril_arrangement, :tsn)
 -->
 <div>
-<%=form_for @search do |s|%>
+  <%=form_for @search do |s|%>
+    <span> <%= render 'leaves', :s => s %> </span>
+    <span> <%= render 'flowers', :s => s %> </span>
+    <span> <%= render 'fruit', :s => s %> </span>
+    <span> <%= render 'bark', :s => s %> </span>
+    <span> <%= render 'thorns', :s => s %> </span>
+    <span> <%= render 'tendril', :s => s %> </span>
 
-<span>
-  <div class="field">
-    <p><strong>Leaf Type</strong></p>
-    <%=s.radio_button :leaf_type, 'simple' %>
-    <%=s.label :simple %><br>
-    <%=s.radio_button :leaf_type, 'compound' %>
-    <%=s.label :compound %><br>
-    <%=s.radio_button :leaf_type, 'needle' %>
-    <%=s.label :needle %><br>
-    <%=s.radio_button :leaf_type, 'scale' %>
-    <%=s.label :scale %><br>
-    <%=s.radio_button :leaf_type, 'thread-like' %>
-    <%=s.label 'thread-like' %>
-  </div>
-
-  <div class="field">
-    <p><strong>Leaf Attachment</strong></p>
-    <%=s.radio_button :leaf_attachment, 'stemmed' %>
-    <%=s.label :stemmed %><br>
-    <%=s.radio_button :leaf_attachment, 'stemless' %>
-    <%=s.label :stemless %><br>
-    <%=s.radio_button :leaf_attachment, 'clasping' %>
-    <%=s.label :clasping %><br>
-    <%=s.radio_button :leaf_attachment, 'surrounding' %>
-    <%=s.label :surrounding %><br>
-    <%=s.radio_button :leaf_attachment, 'rootstock at soil' %>
-    <%=s.label 'rootstock at soil' %>
-  </div>
-
-  <div class="field">
-    <p><strong>Leaf Arrangement</strong></p>
-    <%=s.radio_button :leaf_arrangement, 'opposite' %>
-    <%=s.label :opposite %><br>
-    <%=s.radio_button :leaf_arrangement, 'alternate' %>
-    <%=s.label :alternate %><br>
-    <%=s.radio_button :leaf_arrangement, 'whorled' %>
-    <%=s.label :whorled %><br>
-    <%=s.radio_button :leaf_arrangement, 'basal rosette' %>
-    <%=s.label 'basal rosette' %><br>
-    <%=s.radio_button :leaf_arrangement, 'from soil' %>
-    <%=s.label 'from soil' %>
-  </div>
-</span>
-
-<span>
-  <div class="field">
-    <p><strong>Bark Attachment</strong></p>
-    <%=s.radio_button :bark_attachment, 'firm and solid' %>
-    <%=s.label 'firm and solid' %><br>
-    <%=s.radio_button :bark_attachment, 'fibers shedding off' %>
-    <%=s.label 'fibers shedding off' %><br>
-    <%=s.radio_button :bark_attachment, 'sheeting off' %>
-    <%=s.label 'sheeting off' %><br>
-    <%=s.radio_button :bark_attachment, 'flaking or scaling off' %>
-    <%=s.label 'flaking or scaling off' %><br>
-  </div>
-
-  <div class="field">
-    <p><strong>Bark Texture</strong></p>
-    <%=s.radio_button :bark_texture, 'smooth' %>
-    <%=s.label :smooth %><br>
-    <%=s.radio_button :bark_texture, 'coarse' %>
-    <%=s.label :coarse %><br>
-    <%=s.radio_button :bark_texture, 'scales or plates' %>
-    <%=s.label 'scales or plates' %><br>
-    <%=s.radio_button :bark_texture, 'hairy' %>
-    <%=s.label :hairy %><br>
-    <%=s.radio_button :bark_texture, 'ridges and furrows' %>
-    <%=s.label 'ridges and furrows' %><br>
-  </div>
-
-  <div class="field">
-    <p><strong>Bark Color</strong></p>
-    <%=s.radio_button :bark_color, 'black' %>
-    <%=s.label :black %><br>
-    <%=s.radio_button :bark_color, 'brown' %>
-    <%=s.label :brown %><br>
-    <%=s.radio_button :bark_color, 'white' %>
-    <%=s.label :white %><br>
-    <%=s.radio_button :bark_color, 'gray' %>
-    <%=s.label :gray %><br>
-    <%=s.radio_button :bark_color, 'mottled' %>
-    <%=s.label :mottled %><br>
-  </div>
-</span>
-
-  <div class="action">
-    <%=s.submit "Search"%>
-  </div>
-<%end%>
+    <div class="action">
+      <%=s.submit "Search"%>
+    </div>
+  <%end%>
 <div>
 
 <button id="back">Back</button>
