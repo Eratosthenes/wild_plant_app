@@ -1,0 +1,69 @@
+<h1>Custom Search</h1>
+
+<!--
+:name, :leaf_type, :leaf_attachment, :leaf_arrangement, :leaf_veins, :leaf_edge,
+:flower_type, :flower_attachment, :flower_arrangement, :flower_symmetry, :flower_petal_number,
+:flower_petal_color, :fruit_type, :fruit_attachment, :fruit_arrangement, :fruit_color,
+:bark_attachment, :bark_texture, :bark_color, :thorn_type, :thorn_arrangement, :thorn_stiffness,
+:tendril_type, :tendril_attachment, :tendril_arrangement, :tsn)
+-->
+
+<%=form_for @search do |s|%>
+  <div class="field">
+    <%=s.label :name%>
+    <%=s.text_field :name%>
+  </div>
+
+  <div class="field">
+    <%=s.label :tsn, 'TSN'%>
+    <%=s.text_field :tsn, size: 10%>
+  </div>
+
+  <div class="field">
+    <p><strong>Leaf Type</strong></p>
+    <%=s.radio_button :leaf_type, 'simple' %>
+    <%=s.label :simple %><br>
+    <%=s.radio_button :leaf_type, 'compound' %>
+    <%=s.label :compound %><br>
+    <%=s.radio_button :leaf_type, 'needle' %>
+    <%=s.label :needle %><br>
+    <%=s.radio_button :leaf_type, 'scale' %>
+    <%=s.label :scale %><br>
+    <%=s.radio_button :leaf_type, 'thread-like' %>
+    <%=s.label 'thread-like' %>
+  </div>
+
+  <div class="field">
+    <p><strong>Leaf Attachment</strong></p>
+    <%=s.radio_button :leaf_attachment, 'stemmed' %>
+    <%=s.label :stemmed %><br>
+    <%=s.radio_button :leaf_attachment, 'stemless' %>
+    <%=s.label :stemless %><br>
+    <%=s.radio_button :leaf_attachment, 'clasping' %>
+    <%=s.label :clasping %><br>
+    <%=s.radio_button :leaf_attachment, 'surrounding' %>
+    <%=s.label :surrounding %><br>
+    <%=s.radio_button :leaf_attachment, 'rootstock at soil' %>
+    <%=s.label 'rootstock at soil' %>
+  </div>
+
+  <div class="field">
+    <p><strong>Leaf Arrangement</strong></p>
+    <%=s.radio_button :leaf_arrangement, 'opposite' %>
+    <%=s.label :opposite %><br>
+    <%=s.radio_button :leaf_arrangement, 'alternate' %>
+    <%=s.label :alternate %><br>
+    <%=s.radio_button :leaf_arrangement, 'whorled' %>
+    <%=s.label :whorled %><br>
+    <%=s.radio_button :leaf_arrangement, 'basal rosette' %>
+    <%=s.label 'basal rosette' %><br>
+    <%=s.radio_button :leaf_arrangement, 'from soil' %>
+    <%=s.label 'from soil' %>
+  </div>
+
+  <div class="action">
+    <%=s.submit "Search"%>
+  </div>
+<%end%>
+
+<p><%=link_to 'Back', plants_path %></p>

@@ -1,0 +1,121 @@
+<%= form_for(@plant) do |f| %>
+  <% if @plant.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@plant.errors.count, "error") %> prohibited this plant from being saved:</h2>
+
+      <ul>
+      <% @plant.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :leaf_type %><br>
+    <%= f.text_field :leaf_type %>
+  </div>
+  <div class="field">
+    <%= f.label :leaf_attachment %><br>
+    <%= f.text_field :leaf_attachment %>
+  </div>
+  <div class="field">
+    <%= f.label :leaf_arrangement %><br>
+    <%= f.text_field :leaf_arrangement %>
+  </div>
+  <div class="field">
+    <%= f.label :leaf_veins %><br>
+    <%= f.text_field :leaf_veins %>
+  </div>
+  <div class="field">
+    <%= f.label :leaf_edge %><br>
+    <%= f.text_field :leaf_edge %>
+  </div>
+  <div class="field">
+    <%= f.label :flower_type %><br>
+    <%= f.text_field :flower_type %>
+  </div>
+  <div class="field">
+    <%= f.label :flower_attachment %><br>
+    <%= f.text_field :flower_attachment %>
+  </div>
+  <div class="field">
+    <%= f.label :flower_arrangement %><br>
+    <%= f.text_field :flower_arrangement %>
+  </div>
+  <div class="field">
+    <%= f.label :flower_symmetry %><br>
+    <%= f.text_field :flower_symmetry %>
+  </div>
+  <div class="field">
+    <%= f.label :flower_petal_number %><br>
+    <%= f.text_field :flower_petal_number %>
+  </div>
+  <div class="field">
+    <%= f.label :flower_petal_color %><br>
+    <%= f.text_field :flower_petal_color %>
+  </div>
+  <div class="field">
+    <%= f.label :fruit_type %><br>
+    <%= f.text_field :fruit_type %>
+  </div>
+  <div class="field">
+    <%= f.label :fruit_attachment %><br>
+    <%= f.text_field :fruit_attachment %>
+  </div>
+  <div class="field">
+    <%= f.label :fruit_arrangement %><br>
+    <%= f.text_field :fruit_arrangement %>
+  </div>
+  <div class="field">
+    <%= f.label :fruit_color %><br>
+    <%= f.text_field :fruit_color %>
+  </div>
+  <div class="field">
+    <%= f.label :bark_attachment %><br>
+    <%= f.text_field :bark_attachment %>
+  </div>
+  <div class="field">
+    <%= f.label :bark_texture %><br>
+    <%= f.text_field :bark_texture %>
+  </div>
+  <div class="field">
+    <%= f.label :bark_color %><br>
+    <%= f.text_field :bark_color %>
+  </div>
+  <div class="field">
+    <%= f.label :thorn_type %><br>
+    <%= f.text_field :thorn_type %>
+  </div>
+  <div class="field">
+    <%= f.label :thorn_arrangement %><br>
+    <%= f.text_field :thorn_arrangement %>
+  </div>
+  <div class="field">
+    <%= f.label :thorn_stiffness %><br>
+    <%= f.text_field :thorn_stiffness %>
+  </div>
+  <div class="field">
+    <%= f.label :tendril_type %><br>
+    <%= f.text_field :tendril_type %>
+  </div>
+  <div class="field">
+    <%= f.label :tendril_attachment %><br>
+    <%= f.text_field :tendril_attachment %>
+  </div>
+  <div class="field">
+    <%= f.label :tendril_arrangement %><br>
+    <%= f.text_field :tendril_arrangement %>
+  </div>
+  <div class="field">
+    <%= f.label :tsn %><br>
+    <%= f.number_field :tsn %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

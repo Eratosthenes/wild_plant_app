@@ -1,0 +1,57 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  leaf_type: MyString
+  leaf_attachment: MyString
+  leaf_arrangement: MyString
+  leaf_veins: MyString
+  leaf_edge: MyString
+  flower_type: MyString
+  flower_attachment: MyString
+  flower_arrangement: MyString
+  flower_symmetry: MyString
+  flower_petal_number: MyString
+  flower_petal_color: MyString
+  fruit_type: MyString
+  fruit_attachment: MyString
+  fruit_arrangement: MyString
+  fruit_color: MyString
+  bark_attachment: MyString
+  bark_texture: MyString
+  bark_color: MyString
+  thorn_type: MyString
+  thorn_arrangement: MyString
+  thorn_stiffness: MyString
+  tendril_type: MyString
+  tendril_attachment: MyString
+  tendril_arrangement: MyString
+  tsn: 1
+
+two:
+  name: MyString
+  leaf_type: MyString
+  leaf_attachment: MyString
+  leaf_arrangement: MyString
+  leaf_veins: MyString
+  leaf_edge: MyString
+  flower_type: MyString
+  flower_attachment: MyString
+  flower_arrangement: MyString
+  flower_symmetry: MyString
+  flower_petal_number: MyString
+  flower_petal_color: MyString
+  fruit_type: MyString
+  fruit_attachment: MyString
+  fruit_arrangement: MyString
+  fruit_color: MyString
+  bark_attachment: MyString
+  bark_texture: MyString
+  bark_color: MyString
+  thorn_type: MyString
+  thorn_arrangement: MyString
+  thorn_stiffness: MyString
+  tendril_type: MyString
+  tendril_attachment: MyString
+  tendril_arrangement: MyString
+  tsn: 1

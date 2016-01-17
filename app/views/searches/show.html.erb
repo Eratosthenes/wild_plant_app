@@ -1,0 +1,16 @@
+<h1>Search Results</h1>
+<%=link_to 'Back', new_search_path%>
+
+<%if @plants.empty?%>
+  <p>No records found</p>
+<%else%>
+  <% @plants.each do |plant| %>
+    <h1><%=plant.name%></h1>
+    <p>TSN: <%=plant.tsn%></p>
+    <p>Leaf Type: <%=plant.leaf_type%></p>
+    <p>Leaf Attachment: <%=plant.leaf_attachment%></p>
+    <p>Leaf Arrangement: <%=plant.leaf_arrangement%></p>
+    <p>Leaf Veins: <%=plant.leaf_veins%></p>
+    <p>Leaf Edge: <%=plant.leaf_edge%></p>
+  <%end%>
+<%end%>
