@@ -1,15 +1,29 @@
 <div class="field">
-  <p><strong>Flower Type</strong></p>
-  <%=s.radio_button :flower_type, 'regular' %>
-  <%=s.label :regular %><br>
-  <%=s.radio_button :flower_type, 'daisy-like' %>
-  <%=s.label 'daisy-like' %><br>
-  <%=s.radio_button :flower_type, 'split' %>
-  <%=s.label :split %><br>
-  <%=s.radio_button :flower_type, 'ball' %>
-  <%=s.label :ball %><br>
-  <%=s.radio_button :flower_type, 'pea-like' %>
-  <%=s.label 'pea-like' %><br>
-  <%=s.radio_button :flower_type, 'other' %>
-  <%=s.label :other %><br>
+  <p><strong>Tendril Type</strong></p>
+  <%=s.radio_button :tendril_type, 'irregular curl' %>
+  <%=s.label 'irregular curl' %><br>
+  <%=s.radio_button :tendril_type, 'spiral' %>
+  <%=s.label :spiral %><br>
+  <%=s.radio_button :tendril_type, 'with adhesive suckers' %>
+  <%=s.label 'with adhesive suckers' %><br>
+</div>
+
+<div class="field">
+  <p><strong>Tendril Attachment</strong></p>
+  <%=s.radio_button :tendril_attachment, 'beneath leaf stem' %>
+  <%=s.label 'beneath leaf stem' %><br>
+  <%=s.radio_button :tendril_attachment, 'beneath flower' %>
+  <%=s.label 'beneath flower' %><br>
+  <%=s.radio_button :tendril_attachment, 'leaf tip' %>
+  <%=s.label 'leaf tip' %><br>
+</div>
+
+<div class="field">
+  <p><strong>Tendril Arrangement</strong></p>
+  <%=s.radio_button :tendril_arrangement, 'opposite 1 or 2 leaves' %>
+  <%=s.label 'opposite 1 or 2 leaves' %><br>
+  <%=s.radio_button :tendril_arrangement, 'opposite 3 or more leaves' %>
+  <%=s.label 'opposite 3 or more leaves'%><br>
+  <%=s.radio_button :tendril_arrangement, 'dense along stem' %>
+  <%=s.label 'dense along stem' %><br>
 </div>
