@@ -1,5 +1,10 @@
 <h1>Custom Search</h1>
 
+<div id="features">
+  <a href="#"><p>Leaves</p></a>
+  <a href="#"><p>Bark</p></a>
+</div>
+
 <!--
 :name, :leaf_type, :leaf_attachment, :leaf_arrangement, :leaf_veins, :leaf_edge,
 :flower_type, :flower_attachment, :flower_arrangement, :flower_symmetry, :flower_petal_number,
@@ -9,16 +14,6 @@
 -->
 
 <%=form_for @search do |s|%>
-  <div class="field">
-    <%=s.label :name%>
-    <%=s.text_field :name%>
-  </div>
-
-  <div class="field">
-    <%=s.label :tsn, 'TSN'%>
-    <%=s.text_field :tsn, size: 10%>
-  </div>
-
   <div class="field">
     <p><strong>Leaf Type</strong></p>
     <%=s.radio_button :leaf_type, 'simple' %>
@@ -59,6 +54,46 @@
     <%=s.label 'basal rosette' %><br>
     <%=s.radio_button :leaf_arrangement, 'from soil' %>
     <%=s.label 'from soil' %>
+  </div>
+
+  <div class="field">
+    <p><strong>Bark Attachment</strong></p>
+    <%=s.radio_button :bark_attachment, 'firm and solid' %>
+    <%=s.label 'firm and solid' %><br>
+    <%=s.radio_button :bark_attachment, 'fibers shedding off' %>
+    <%=s.label 'fibers shedding off' %><br>
+    <%=s.radio_button :bark_attachment, 'sheeting off' %>
+    <%=s.label 'sheeting off' %><br>
+    <%=s.radio_button :bark_attachment, 'flaking or scaling off' %>
+    <%=s.label 'flaking or scaling off' %><br>
+  </div>
+
+  <div class="field">
+    <p><strong>Bark Texture</strong></p>
+    <%=s.radio_button :bark_texture, 'smooth' %>
+    <%=s.label :smooth %><br>
+    <%=s.radio_button :bark_texture, 'coarse' %>
+    <%=s.label :coarse %><br>
+    <%=s.radio_button :bark_texture, 'scales or plates' %>
+    <%=s.label 'scales or plates' %><br>
+    <%=s.radio_button :bark_texture, 'hairy' %>
+    <%=s.label :hairy %><br>
+    <%=s.radio_button :bark_texture, 'ridges and furrows' %>
+    <%=s.label 'ridges and furrows' %><br>
+  </div>
+
+  <div class="field">
+    <p><strong>Bark Color</strong></p>
+    <%=s.radio_button :bark_color, 'black' %>
+    <%=s.label :black %><br>
+    <%=s.radio_button :bark_color, 'brown' %>
+    <%=s.label :brown %><br>
+    <%=s.radio_button :bark_color, 'white' %>
+    <%=s.label :white %><br>
+    <%=s.radio_button :bark_color, 'gray' %>
+    <%=s.label :gray %><br>
+    <%=s.radio_button :bark_color, 'mottled' %>
+    <%=s.label :mottled %><br>
   </div>
 
   <div class="action">
