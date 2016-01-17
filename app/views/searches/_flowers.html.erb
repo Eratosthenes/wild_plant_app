@@ -16,16 +16,27 @@
 
 <div class="field">
   <p><strong>Flower Attachment</strong></p>
-  <%=s.radio_button :flower_type, 'stemmed' %>
+  <%=s.radio_button :flower_attachment, 'stemmed' %>
   <%=s.label :regular %><br>
-  <%=s.radio_button :flower_type, 'stemless' %>
+  <%=s.radio_button :flower_attachment, 'stemless' %>
   <%=s.label 'daisy-like' %><br>
-  <%=s.radio_button :flower_type, 'split' %>
+  <%=s.radio_button :flower_attachment, 'branched stems' %>
   <%=s.label :split %><br>
-  <%=s.radio_button :flower_type, 'ball' %>
+  <%=s.radio_button :flower_attachment, 'leaf back' %>
   <%=s.label :ball %><br>
-  <%=s.radio_button :flower_type, 'pea-like' %>
-  <%=s.label 'pea-like' %><br>
-  <%=s.radio_button :flower_type, 'other' %>
-  <%=s.label :other %><br>
+</div>
+
+<div class="field">
+  <p><strong>Flower Arrangement</strong></p>
+  <%=s.radio_button :flower_arrangement, 'solitary' %>
+  <%=s.label :solitary %><br>
+  <%=s.radio_button :flower_arrangement, 'single cluster' %>
+  <%=s.label 'single cluster' %><br>
+  <%=s.radio_button :flower_arrangement, 'multiple clusters' %>
+  <%=s.label 'multiple clusters' %><br>
+</div>
+
+<div class="field">
+  <p><strong>Symmetry</strong></p>
+  
 </div>
