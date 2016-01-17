@@ -38,5 +38,21 @@
 
 <div class="field">
   <p><strong>Symmetry</strong></p>
-  
+  <%=s.radio_button :flower_symmetry, 'bilateral' %>
+  <%=s.label :bilateral %><br>
+  <%=s.radio_button :flower_symmetry, 'radial' %>
+  <%=s.label :radial %><br>
+</div>
+
+<div class="field">
+  <p><strong>Petal Number</strong></p>
+  <%=s.label :flower_petal_number %><br>
+  <%=s.select :flower_petal_number, options_for_select(['1','2','3','4','5','6 or more']), include_blank: true %><br>
+</div>
+
+<div class="field">
+  <p><strong>Petal Color</strong></p>
+  <%=s.label :flower_petal_color %><br>
+  <%=s.select :flower_petal_color, options_for_select(['white', 'yellow',
+    'red or pink', 'blue', 'green', 'brown']), include_blank: true %><br>
 </div>
