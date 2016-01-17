@@ -1,4 +1,5 @@
-<h1>Custom Search</h1>
+<%= javascript_include_tag 'multistep' %>
+<h1>Features</h1>
 
 <div id="features">
   <a href="#"><p>Leaves</p></a>
@@ -12,8 +13,10 @@
 :bark_attachment, :bark_texture, :bark_color, :thorn_type, :thorn_arrangement, :thorn_stiffness,
 :tendril_type, :tendril_attachment, :tendril_arrangement, :tsn)
 -->
-
+<div>
 <%=form_for @search do |s|%>
+
+<span>
   <div class="field">
     <p><strong>Leaf Type</strong></p>
     <%=s.radio_button :leaf_type, 'simple' %>
@@ -55,7 +58,9 @@
     <%=s.radio_button :leaf_arrangement, 'from soil' %>
     <%=s.label 'from soil' %>
   </div>
+</span>
 
+<span>
   <div class="field">
     <p><strong>Bark Attachment</strong></p>
     <%=s.radio_button :bark_attachment, 'firm and solid' %>
@@ -95,10 +100,16 @@
     <%=s.radio_button :bark_color, 'mottled' %>
     <%=s.label :mottled %><br>
   </div>
+</span>
 
   <div class="action">
     <%=s.submit "Search"%>
   </div>
 <%end%>
+<div>
+
+<button id="back">Back</button>
+<button id="next">Next</button>
+<button id="finish">Finish</button>
 
 <p><%=link_to 'Back', plants_path %></p>
