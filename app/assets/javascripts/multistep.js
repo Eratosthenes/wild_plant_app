@@ -24,6 +24,10 @@ $(function(){
     $('.action').addClass('hidden');
 
     var buttonValidation = function(i){
+      if (i==0)
+        $('#first_back').removeClass('hidden');
+      else
+        $('#first_back').addClass('hidden');
       if (i>0 && $('#back').is('.hidden'))
       	$('#back').removeClass('hidden');
       if (i==0 && !$('#back').is('.hidden'))
@@ -50,6 +54,12 @@ $(function(){
       buttonValidation(i);
       currentForm.eq(i).removeClass('hidden');
       currentForm.eq(i+1).addClass('hidden');
+    });
+
+    $('#first_back').click(function(){
+      $('#features').removeClass('hidden');
+      $('.action').removeClass('hidden');
+      reset();
     });
 
     $('#finish').click(function(){

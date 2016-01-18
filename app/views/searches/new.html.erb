@@ -13,13 +13,6 @@ may want to just get rid of scaffold css altogether -->
   <a href="#">Tendril</a>
 </div>
 
-<!--
-:name, :leaf_type, :leaf_attachment, :leaf_arrangement, :leaf_veins, :leaf_edge,
-:flower_type, :flower_attachment, :flower_arrangement, :flower_symmetry, :flower_petal_number,
-:flower_petal_color, :fruit_type, :fruit_attachment, :fruit_arrangement, :fruit_color,
-:bark_attachment, :bark_texture, :bark_color, :thorn_type, :thorn_arrangement, :thorn_stiffness,
-:tendril_type, :tendril_attachment, :tendril_arrangement, :tsn)
--->
 <div>
   <%=form_for @search do |s|%>
     <span> <%= render 'leaves', :s => s %> </span>
@@ -35,6 +28,7 @@ may want to just get rid of scaffold css altogether -->
   <%end%>
 <div>
 
+<button id="first_back">Back</button>
 <button id="back">Back</button>
 <button id="next">Next</button>
 <button id="finish">Finish</button>
