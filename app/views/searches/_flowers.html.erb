@@ -52,7 +52,16 @@
 
 <div class="field">
   <p><strong>Petal Color</strong></p>
-  <%=s.label :flower_petal_color %><br>
-  <%=s.select :flower_petal_color, options_for_select(['white', 'yellow',
-    'red or pink', 'blue', 'green', 'brown']), include_blank: true %><br>
+  <%=s.radio_button :flower_petal_color, 'whit' %>
+  <%=s.label :white %><br>
+  <%=s.radio_button :flower_petal_color, 'yellow' %>
+  <%=s.label :yellow %><br>
+  <%=s.radio_button :flower_petal_color, 'pink' %>
+  <%=s.label 'red or pink' %><br>
+  <%=s.radio_button :flower_petal_color, 'blue' %>
+  <%=s.label :blue %><br>
+  <%=s.radio_button :flower_petal_color, 'green' %>
+  <%=s.label :green %><br>
+  <%=s.radio_button :flower_petal_color, 'brown' %>
+  <%=s.label :brown %><br>
 </div>
