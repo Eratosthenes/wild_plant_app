@@ -5,6 +5,10 @@ h1
 { text-align: center;
 }
 
+.hidden
+{ display: none;
+}
+
 .action
 { text-align: center;
   margin-top: 10px;
@@ -15,18 +19,14 @@ h1
   margin-top: 10px;
 }
 
-.list-group, .features, .buttons
+.back_to_search
+{ margin-left: 10px;
+}
+
+.list-group, .features, .buttons, .results_table
 { width: 50%;
   margin: auto;
 }
-
-/*
-.well
-{ padding-bottom: 0px;
-  margin-bottom: 0px;
-  border-bottom: none;
-}
-*/
 
 .buttons
 { padding-top: 10px;

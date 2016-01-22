@@ -11,8 +11,11 @@ $(function(){
     $('.field').addClass('well');
     $('button').removeClass('hidden');
     $('#features').addClass('hidden');
-    $(this).addClass('list-group-item-success');
     multiStep($(this).index());
+  });
+
+  $('.list-group-item').click(function(){
+    $(this).addClass('list-group-item-success');
   });
 
   var multiStep = function(idx){
