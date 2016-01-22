@@ -10,11 +10,32 @@ h1
   margin-top: 10px;
 }
 
-span
-{ margin: auto;
+.back_to_menu
+{ text-align: center;
+  margin-top: 10px;
 }
 
-.list-group
+.list-group, .features, .buttons
 { width: 50%;
   margin: auto;
+}
+
+/*
+.well
+{ padding-bottom: 0px;
+  margin-bottom: 0px;
+  border-bottom: none;
+}
+*/
+
+.buttons
+{ padding-top: 10px;
+}
+
+#first_back, #back
+{ float:left;
+}
+
+#next, #finish
+{ float:right;
 }

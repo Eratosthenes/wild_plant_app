@@ -16,32 +16,28 @@ may want to just get rid of scaffold css altogether -->
 
 <div>
   <%=form_for @search do |s|%>
-    <div class="row">
-      <div class="col-md-5"></div>
-      <div class="col-md-7">
+    <div class="features">
         <span> <%= render 'leaves', :s => s %> </span>
         <span> <%= render 'flowers', :s => s %> </span>
         <span> <%= render 'fruit', :s => s %> </span>
         <span> <%= render 'bark', :s => s %> </span>
         <span> <%= render 'thorns', :s => s %> </span>
         <span> <%= render 'tendril', :s => s %> </span>
-      </div>
     </div>
 
     <div class="action">
       <%=s.submit "Search", class: "btn btn-primary" %>
     </div>
   <%end%>
-<div>
 
-<div class="row">
-  <div class="col-md-5"></div>
-  <div class="col-md-7">
+<div class="buttons">
     <button id="first_back" class="btn btn-primary">Back</button>
     <button id="back" class="btn btn-primary">Back</button>
     <button id="next" class="btn btn-primary">Next</button>
     <button id="finish" class="btn btn-primary">Finish</button>
-  </div>
 </div>
 
-<p><%=link_to 'Back', plants_path %></p>
+<div class="back_to_menu">
+  <%=link_to 'Back to Menu', plants_path %>
+</div>
+<!--<p><%=link_to 'Back', plants_path %></p>-->

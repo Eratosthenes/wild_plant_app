@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   root 'plants#index'
+  get "/pages/:page" => "pages#show"
   resources :plants
   resources :searches
   # The priority is based upon order of creation: first created -> highest priority.

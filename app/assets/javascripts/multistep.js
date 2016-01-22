@@ -2,11 +2,13 @@ $(function(){
   var reset = function(){
     $('button').addClass('hidden');
     $('span').addClass('hidden');
+    $('p').addClass('lead');
   }
 
   reset();
 
   $('a').click(function(){
+    $('.field').addClass('well');
     $('button').removeClass('hidden');
     $('#features').addClass('hidden');
     $(this).addClass('list-group-item-success');
@@ -65,6 +67,7 @@ $(function(){
 
     $('#finish').click(function(){
       $('#features').removeClass('hidden');
+      $('.field').removeClass('well');
       $('.action').removeClass('hidden');
       reset();
     });
