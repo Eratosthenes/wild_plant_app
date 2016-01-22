@@ -1,15 +1,6 @@
-<p id="notice"><%= notice %></p>
-
-<div class="list-group">
-  <a class="list-group-item" href="#">Instructions</a>
-  <a class="list-group-item" href="#">Glossary</a>
-  <a class="list-group-item" href="#">Map</a>
-  <%= link_to 'Start New Plant ID', new_search_path, class: "list-group-item" %>
-</div>
-
 <h1>Plant Listing</h1>
 
-<table class="table table-bordered table-hover table-condensed table-responsive">
+<table class="table table-striped table-bordered">
   <thead>
     <tr>
       <th>Name</th>
@@ -80,7 +71,3 @@
     <% end %>
   </tbody>
 </table>
-
-<br>
-
-<%= link_to 'New Plant', new_plant_path %>

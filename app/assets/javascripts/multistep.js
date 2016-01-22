@@ -9,6 +9,7 @@ $(function(){
   $('a').click(function(){
     $('button').removeClass('hidden');
     $('#features').addClass('hidden');
+    $(this).addClass('list-group-item-success');
     multiStep($(this).index());
   });
 
