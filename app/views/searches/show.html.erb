@@ -2,14 +2,14 @@
 <%=link_to 'Back to Search', new_search_path, class: 'back_to_search' %>
 
 <%if @plants.empty?%>
-  <p>No records found</p>
+  <p style="text-align:center;">No records found</p>
 <%else%>
   <p style="text-align:center;"><%= @plants.length %> results found.</p>
   <div class="results_table">
     <table class="table table-hover table-condensed">
       <thead>
         <tr>
-          <th></th>
+          <th>#</th>
           <th>Name</th>
           <th>Tsn</th>
           <th colspan="3"></th>
