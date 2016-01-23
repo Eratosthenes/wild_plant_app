@@ -3,8 +3,27 @@
 
 /*body
 { background-image: url('tree_bark.png');
+}*/
+
+label
+{ border-radius: 5px;
+  color: black;
 }
-*/
+
+label:hover
+{ background-color: #337ab7;
+  color: white;
+}
+
+/*
+a:hover
+{ background-color:#d9edf7 !important;
+}
+
+.well
+{ background-color: #337ab7;
+  color: white;
+}*/
 
 h1
 { text-align: center;

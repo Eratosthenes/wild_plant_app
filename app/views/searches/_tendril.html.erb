@@ -1,29 +1,26 @@
 <div class="field">
   <p><strong>Tendril Type</strong></p>
-  <%=s.radio_button :tendril_type, 'irregular curl' %>
-  <%=s.label 'irregular curl' %><br>
-  <%=s.radio_button :tendril_type, 'spiral' %>
-  <%=s.label :spiral %><br>
-  <%=s.radio_button :tendril_type, 'with adhesive suckers' %>
-  <%=s.label 'with adhesive suckers' %><br>
+  <ul class="list-group">
+    <label class="list-group-item"><%=s.radio_button :tendril_type, 'irregular curl' %> Irregular curl</label><br>
+    <label class="list-group-item"><%=s.radio_button :tendril_type, 'spiral' %> Spiral</label><br>
+    <label class="list-group-item"><%=s.radio_button :tendril_type, 'with adhesive suckers' %> With adhesive suckers</label><br>
+  </ul>
 </div>
 
 <div class="field">
   <p><strong>Tendril Attachment</strong></p>
-  <%=s.radio_button :tendril_attachment, 'beneath leaf stem' %>
-  <%=s.label 'beneath leaf stem' %><br>
-  <%=s.radio_button :tendril_attachment, 'beneath flower' %>
-  <%=s.label 'beneath flower' %><br>
-  <%=s.radio_button :tendril_attachment, 'leaf tip' %>
-  <%=s.label 'leaf tip' %><br>
+  <ul class="list-group">
+    <label class="list-group-item"><%=s.radio_button :tendril_attachment, 'beneath leaf stem' %> Beneath leaf stem</label><br>
+    <label class="list-group-item"><%=s.radio_button :tendril_attachment, 'beneath flower' %> Beneath flower</label><br>
+    <label class="list-group-item"><%=s.radio_button :tendril_attachment, 'leaf tip' %> Leaf tip</label><br>
+  </ul>
 </div>
 
 <div class="field">
   <p><strong>Tendril Arrangement</strong></p>
-  <%=s.radio_button :tendril_arrangement, 'opposite 1 or 2 leaves' %>
-  <%=s.label 'opposite 1 or 2 leaves' %><br>
-  <%=s.radio_button :tendril_arrangement, 'opposite 3 or more leaves' %>
-  <%=s.label 'opposite 3 or more leaves'%><br>
-  <%=s.radio_button :tendril_arrangement, 'dense along stem' %>
-  <%=s.label 'dense along stem' %><br>
+  <ul class="list-group">
+    <label class="list-group-item"><%=s.radio_button :tendril_arrangement, 'opposite 1 or 2 leaves' %> Opposite one or two leaves</label><br>
+    <label class="list-group-item"><%=s.radio_button :tendril_arrangement, 'opposite 3 or more leaves' %> Opposite three or more leaves</label><br>
+    <label class="list-group-item"><%=s.radio_button :tendril_arrangement, 'beneath leaf stem' %> Dense along stem</label><br>
+  </ul>
 </div>

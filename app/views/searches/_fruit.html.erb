@@ -1,40 +1,39 @@
 <div class="field">
   <p><strong>Fruit Type</strong></p>
-  <%=s.radio_button :fruit_type, 'fruit' %>
-  <%=s.label :fruit %><br>
-  <%=s.radio_button :fruit_type, 'seed' %>
-  <%=s.label :seed %><br>
-  <%=s.radio_button :fruit_type, 'spore' %>
-  <%=s.label :spore %><br>
-  <%=s.radio_button :fruit_type, 'nut' %>
-  <%=s.label :nut %><br>
+  <ul class="list-group">
+    <label class="list-group-item"><%=s.radio_button :fruit_type, 'fruit' %> Fruit</label><br>
+    <label class="list-group-item"><%=s.radio_button :fruit_type, 'seed' %> Seed</label><br>
+    <label class="list-group-item"><%=s.radio_button :fruit_type, 'spore' %> Spore</label><br>
+    <label class="list-group-item"><%=s.radio_button :fruit_type, 'nut' %> Nut</label><br>
+  </ul>
 </div>
 
 <div class="field">
   <p><strong>Fruit Attachment</strong></p>
-  <%=s.radio_button :fruit_attachment, 'stemmed' %>
-  <%=s.label :stemmed %><br>
-  <%=s.radio_button :fruit_attachment, 'stemless' %>
-  <%=s.label :stemless %><br>
-  <%=s.radio_button :fruit_attachment, 'branched' %>
-  <%=s.label 'branched stems' %><br>
-  <%=s.radio_button :fruit_attachment, 'leaf back' %>
-  <%=s.label 'leaf back' %><br>
+  <ul class="list-group">
+    <label class="list-group-item"><%=s.radio_button :fruit_attachment, 'stemmed' %> Stemmed</label><br>
+    <label class="list-group-item"><%=s.radio_button :fruit_attachment, 'stemless' %> Stemless</label><br>
+    <label class="list-group-item"><%=s.radio_button :fruit_attachment, 'branched' %> Branched stems</label><br>
+    <label class="list-group-item"><%=s.radio_button :fruit_attachment, 'leaf back' %> Leaf back</label><br>
+  </ul>
 </div>
 
 <div class="field">
   <p><strong>Fruit Arrangement</strong></p>
-  <%=s.radio_button :fruit_arrangement, 'solitary' %>
-  <%=s.label :solitary %><br>
-  <%=s.radio_button :fruit_arrangement, 'single cluster' %>
-  <%=s.label 'single cluster' %><br>
-  <%=s.radio_button :fruit_arrangement, 'multiple cluster' %>
-  <%=s.label 'multiple cluster' %><br>
+  <ul class="list-group">
+    <label class="list-group-item"><%=s.radio_button :fruit_arrangement, 'solitary' %> Solitary</label><br>
+    <label class="list-group-item"><%=s.radio_button :fruit_arrangement, 'single cluster' %> Single cluster</label><br>
+    <label class="list-group-item"><%=s.radio_button :fruit_arrangement, 'multiple cluster' %> Multiple cluster</label><br>
+  </ul>
 </div>
 
 <div class="field">
   <p><strong>Fruit Color</strong></p>
-  <%=s.label :fruit_color %><br>
-  <%=s.select :fruit_color, options_for_select(['red', 'blue', 'white', 'brown',
-    'variable']), include_blank: true %>
+  <ul class="list-group">
+    <label class="list-group-item"><%=s.radio_button :fruit_color, 'red' %> Red</label><br>
+    <label class="list-group-item"><%=s.radio_button :fruit_color, 'blue' %> Blue</label><br>
+    <label class="list-group-item"><%=s.radio_button :fruit_color, 'white' %> White</label><br>
+    <label class="list-group-item"><%=s.radio_button :fruit_color, 'brown' %> Brown</label><br>
+    <label class="list-group-item"><%=s.radio_button :fruit_color, 'variable' %> Variable</label><br>
+  </ul>
 </div>

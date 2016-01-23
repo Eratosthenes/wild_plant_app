@@ -1,41 +1,33 @@
 <div class="field">
   <p><strong>Bark Attachment</strong></p>
-  <%=s.radio_button :bark_attachment, 'firm' %>
-  <%=s.label 'firm and solid' %><br>
-  <%=s.radio_button :bark_attachment, 'peeling' %>
-  <%=s.label 'fibers shedding off' %><br>
-  <%=s.radio_button :bark_attachment, 'fibrous' %>
-  <%=s.label 'sheeting off' %><br>
-  <%=s.radio_button :bark_attachment, 'flaking or scaling' %>
-  <%=s.label 'flaking or scaling off' %><br>
+  <ul class="list-group">
+    <label class="list-group-item"><%=s.radio_button :bark_attachment, 'firm' %> Firm and solid</label><br>
+    <label class="list-group-item"><%=s.radio_button :bark_attachment, 'peeling' %> Sheeting off</label><br>
+    <label class="list-group-item"><%=s.radio_button :bark_attachment, 'fibrous' %> Fibers shedding off</label><br>
+    <label class="list-group-item"><%=s.radio_button :bark_attachment, 'flaking or scaling' %> Flaking or scaling off</label><br>
+  </ul>
 </div>
 
 <div class="field">
   <p><strong>Bark Texture</strong></p>
-  <%=s.radio_button :bark_texture, 'smooth' %>
-  <%=s.label :smooth %><br>
-  <%=s.radio_button :bark_texture, 'rough' %>
-  <%=s.label :coarse %><br>
-  <%=s.radio_button :bark_texture, 'scales' %>
-  <%=s.label 'scales or plates' %><br>
-  <%=s.radio_button :bark_texture, 'hairy' %>
-  <%=s.label :hairy %><br>
-  <%=s.radio_button :bark_texture, 'furrows' %>
-  <%=s.label 'ridges and furrows' %><br>
-  <%=s.radio_button :bark_texture, 'other' %>
-  <%=s.label :other %><br>
+  <ul class="list-group">
+    <label class="list-group-item"><%=s.radio_button :bark_texture, 'smooth' %> Smooth</label><br>
+    <label class="list-group-item"><%=s.radio_button :bark_texture, 'rough' %> Rough</label><br>
+    <label class="list-group-item"><%=s.radio_button :bark_texture, 'scales' %> Scales</label><br>
+    <label class="list-group-item"><%=s.radio_button :bark_texture, 'hairy' %> Hairy</label><br>
+    <label class="list-group-item"><%=s.radio_button :bark_texture, 'furrows' %> Furrows</label><br>
+    <label class="list-group-item"><%=s.radio_button :bark_texture, 'other' %> Other</label><br>
+  </ul>
 </div>
 
 <div class="field">
   <p><strong>Bark Color</strong></p>
-  <%=s.radio_button :bark_color, 'black' %>
-  <%=s.label :black %><br>
-  <%=s.radio_button :bark_color, 'brown' %>
-  <%=s.label :brown %><br>
-  <%=s.radio_button :bark_color, 'white' %>
-  <%=s.label :white %><br>
-  <%=s.radio_button :bark_color, 'gray' %>
-  <%=s.label :gray %><br>
-  <%=s.radio_button :bark_color, 'mottled' %>
-  <%=s.label :mottled %><br>
+  <ul class="list-group">
+    <label class="list-group-item"><%=s.radio_button :bark_color, 'black' %> Black</label><br>
+    <label class="list-group-item"><%=s.radio_button :bark_color, 'brown' %> Brown</label><br>
+    <label class="list-group-item"><%=s.radio_button :bark_color, 'white' %> White</label><br>
+    <label class="list-group-item"><%=s.radio_button :bark_color, 'gray' %> Gray</label><br>
+    <label class="list-group-item"><%=s.radio_button :bark_color, 'mottled' %> Mottled</label><br>
+  </ul>
 </div>
+

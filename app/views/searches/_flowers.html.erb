@@ -1,45 +1,40 @@
 <div class="field">
   <p><strong>Flower Type</strong></p>
-  <%=s.radio_button :flower_type, 'regular' %>
-  <%=s.label :regular %><br>
-  <%=s.radio_button :flower_type, 'daisy-like' %>
-  <%=s.label 'daisy-like' %><br>
-  <%=s.radio_button :flower_type, 'split' %>
-  <%=s.label :split %><br>
-  <%=s.radio_button :flower_type, 'ball' %>
-  <%=s.label :ball %><br>
-  <%=s.radio_button :flower_type, 'pea-like' %>
-  <%=s.label 'pea-like' %><br>
-  <%=s.radio_button :flower_type, 'other' %>
-  <%=s.label :other %><br>
+  <ul class="list-group">
+    <label class="list-group-item"><%=s.radio_button :flower_type, 'regular' %> Regular</label><br>
+    <label class="list-group-item"><%=s.radio_button :flower_type, 'daisy-like' %> Daisy-like</label><br>
+    <label class="list-group-item"><%=s.radio_button :flower_type, 'split' %> Split</label><br>
+    <label class="list-group-item"><%=s.radio_button :flower_type, 'ball' %> Ball</label><br>
+    <label class="list-group-item"><%=s.radio_button :flower_type, 'pea-like' %> Pea-like</label><br>
+    <label class="list-group-item"><%=s.radio_button :flower_type, 'other' %> Other</label><br>
+  </ul>
 </div>
 
 <div class="field">
   <p><strong>Flower Attachment</strong></p>
-  <%=s.radio_button :flower_attachment, 'stemmed' %>
-  <%=s.label :stemmed %><br>
-  <%=s.radio_button :flower_attachment, 'stemless' %>
-  <%=s.label :stemless %><br>
-  <%=s.radio_button :flower_attachment, 'branched' %>
-  <%=s.label 'branched stems' %><br>
+  <ul class="list-group">
+    <label class="list-group-item"><%=s.radio_button :flower_attachment, 'stemmed' %> Stemmed</label><br>
+    <label class="list-group-item"><%=s.radio_button :flower_attachment, 'stemless' %> Stemless</label><br>
+    <label class="list-group-item"><%=s.radio_button :flower_attachment, 'branched' %> Branched stems</label><br>
+  </ul>
 </div>
 
 <div class="field">
   <p><strong>Flower Arrangement</strong></p>
-  <%=s.radio_button :flower_arrangement, 'solitary' %>
-  <%=s.label :solitary %><br>
-  <%=s.radio_button :flower_arrangement, 'single cluster' %>
-  <%=s.label 'single cluster' %><br>
-  <%=s.radio_button :flower_arrangement, 'multiple clusters' %>
-  <%=s.label 'multiple clusters' %><br>
+  <ul class="list-group">
+    <label class="list-group-item"><%=s.radio_button :flower_arrangement, 'solitary' %> Solitary</label><br>
+    <label class="list-group-item"><%=s.radio_button :flower_arrangement, 'single cluster' %> Single cluster</label><br>
+    <label class="list-group-item"><%=s.radio_button :flower_arrangement, 'multiple clusters' %> Multiple clusters</label><br>
+  </ul>
 </div>
+
 
 <div class="field">
   <p><strong>Symmetry</strong></p>
-  <%=s.radio_button :flower_symmetry, 'bilateral' %>
-  <%=s.label :bilateral %><br>
-  <%=s.radio_button :flower_symmetry, 'radial' %>
-  <%=s.label :radial %><br>
+  <ul class="list-group">
+    <label class="list-group-item"><%=s.radio_button :flower_symmetry, 'bilateral' %> Bilateral</label><br>
+    <label class="list-group-item"><%=s.radio_button :flower_symmetry, 'radial' %> Radial</label><br>
+  </ul>
 </div>
 
 <div class="field">
@@ -50,16 +45,12 @@
 
 <div class="field">
   <p><strong>Petal Color</strong></p>
-  <%=s.radio_button :flower_petal_color, 'whit' %>
-  <%=s.label :white %><br>
-  <%=s.radio_button :flower_petal_color, 'yellow' %>
-  <%=s.label :yellow %><br>
-  <%=s.radio_button :flower_petal_color, 'pink' %>
-  <%=s.label 'red or pink' %><br>
-  <%=s.radio_button :flower_petal_color, 'blue' %>
-  <%=s.label :blue %><br>
-  <%=s.radio_button :flower_petal_color, 'green' %>
-  <%=s.label :green %><br>
-  <%=s.radio_button :flower_petal_color, 'brown' %>
-  <%=s.label :brown %><br>
+  <ul class="list-group">
+    <label class="list-group-item"><%=s.radio_button :flower_petal_color, 'whit' %> White</label><br>
+    <label class="list-group-item"><%=s.radio_button :flower_petal_color, 'yellow' %> Yellow</label><br>
+    <label class="list-group-item"><%=s.radio_button :flower_petal_color, 'pink' %> Pink</label><br>
+    <label class="list-group-item"><%=s.radio_button :flower_petal_color, 'blue' %> Blue</label><br>
+    <label class="list-group-item"><%=s.radio_button :flower_petal_color, 'green' %> Green</label><br>
+    <label class="list-group-item"><%=s.radio_button :flower_petal_color, 'brown' %> Brown</label><br>
+  </ul>
 </div>

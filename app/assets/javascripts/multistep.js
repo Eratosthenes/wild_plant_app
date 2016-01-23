@@ -14,7 +14,7 @@ $(function(){
     multiStep($(this).index());
   });
 
-  $('.list-group-item').click(function(){
+  $('#list-group-item').click(function(){
     $(this).addClass('list-group-item-success');
   });
 
