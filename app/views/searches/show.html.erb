@@ -4,7 +4,7 @@
   <p style="text-align:center;">No records found</p>
   <div style="text-align:center;"><%=link_to 'New Search', new_search_path, class: 'back_to_search' %></div>
 <%else%>
-  <p style="text-align:center;"><%= @plants.length %> results found.</p>
+  <p style="text-align:center;"><%=pluralize(@plants.length, "result")%> found.</p>
   <div style="text-align:center;"><%=link_to 'New Search', new_search_path, class: 'back_to_search' %></div>
   <div class="results_table">
     <table class="table table-hover table-condensed">
