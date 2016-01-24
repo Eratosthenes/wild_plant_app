@@ -1,9 +1,9 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-/*body
-{ background-image: url('tree_bark.png');
-}*/
+body
+{ background-image: url('light_greenery.jpg');
+}
 
 label
 { border-radius: 5px;
@@ -15,15 +15,18 @@ label:hover
   color: white;
 }
 
-/*
-a:hover
-{ background-color:#d9edf7 !important;
+a
+{ color: white;
+}
+
+#subtitle
+{ text-shadow: 2px 2px 3px black;
+  color: white;
 }
 
 .well
-{ background-color: #337ab7;
-  color: white;
-}*/
+{ background-color: rgba(245, 245, 245, 0.4);
+}
 
 h1
 { text-align: center;
@@ -40,7 +43,7 @@ h1
 
 .back_to_menu
 { text-align: center;
-  margin-top: 10px;
+  margin-top: -5px;
   margin-bottom: 10px;
 }
 
