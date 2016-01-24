@@ -25,7 +25,6 @@
             <td><%= i %></td>
             <!--<td><a href="#"><%=plant.name%></a></td>-->
             <td><%=link_to "#{plant.name}", plant_detail_path(plant.get_details.first.id) %></td>
-            <!--<td><%= plant.get_details %></td> -->
             <td><%=plant.tsn%></td>
           </tr>
         <%end%>
