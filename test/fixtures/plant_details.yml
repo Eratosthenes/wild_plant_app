@@ -1,0 +1,53 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  tsn: 1
+  common_name: MyString
+  native: MyString
+  invasive: MyString
+  typical_habitat: MyString
+  typical_flowering_time: MyString
+  typical_fruiting_time: MyString
+  growth_habit: MyString
+  annual_biennial_perennial: MyString
+  toxicity: MyString
+  medical_uses: MyString
+  culinary_uses: MyString
+  ornamental_uses: MyString
+  other_uses: MyString
+  status_local: MyString
+  status_state: MyString
+  status_us: MyString
+  status_global: MyString
+  ecr: MyString
+  hhcp: MyString
+  leb: MyString
+  uwb: MyString
+  wsp: MyString
+  ar: MyString
+
+two:
+  tsn: 1
+  common_name: MyString
+  native: MyString
+  invasive: MyString
+  typical_habitat: MyString
+  typical_flowering_time: MyString
+  typical_fruiting_time: MyString
+  growth_habit: MyString
+  annual_biennial_perennial: MyString
+  toxicity: MyString
+  medical_uses: MyString
+  culinary_uses: MyString
+  ornamental_uses: MyString
+  other_uses: MyString
+  status_local: MyString
+  status_state: MyString
+  status_us: MyString
+  status_global: MyString
+  ecr: MyString
+  hhcp: MyString
+  leb: MyString
+  uwb: MyString
+  wsp: MyString
+  ar: MyString

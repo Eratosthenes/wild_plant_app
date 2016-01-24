@@ -23,3 +23,17 @@ File.foreach('public/6-CHARACTERISTICS.txt') do |line|
   i+=1
 end
 puts i
+
+content = File.readlines('public/7-RELATIONSHIPS.txt')
+
+col_names = ["tsn", "common_name", "native", "invasive", "typical_habitat", "typical_flowering_time",
+"typical_fruiting_time", "growth_habit", "annual_biennial_perennial", "toxicity",
+"medical_uses", "culinary_uses", "ornamental_uses", "other_uses", "status_local",
+"status_state", "status_us", "status_global", "ecr", "hhcp", "leb", "uwb", "wsp", "ar"]
+
+PlantDetail.delete_all
+content.drop(1).each do |line|
+  line = line.chomp.gsub('"','').split(/\t/)
+  line[0] = line[0].to_i
+  PlantDetail.create!(Hash[col_names.zip(line)])
+end

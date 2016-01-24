@@ -1,0 +1,113 @@
+<%= form_for(@plant_detail) do |f| %>
+  <% if @plant_detail.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@plant_detail.errors.count, "error") %> prohibited this plant_detail from being saved:</h2>
+
+      <ul>
+      <% @plant_detail.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :tsn %><br>
+    <%= f.number_field :tsn %>
+  </div>
+  <div class="field">
+    <%= f.label :common_name %><br>
+    <%= f.text_field :common_name %>
+  </div>
+  <div class="field">
+    <%= f.label :native %><br>
+    <%= f.text_field :native %>
+  </div>
+  <div class="field">
+    <%= f.label :invasive %><br>
+    <%= f.text_field :invasive %>
+  </div>
+  <div class="field">
+    <%= f.label :typical_habitat %><br>
+    <%= f.text_field :typical_habitat %>
+  </div>
+  <div class="field">
+    <%= f.label :typical_flowering_time %><br>
+    <%= f.text_field :typical_flowering_time %>
+  </div>
+  <div class="field">
+    <%= f.label :typical_fruiting_time %><br>
+    <%= f.text_field :typical_fruiting_time %>
+  </div>
+  <div class="field">
+    <%= f.label :growth_habit %><br>
+    <%= f.text_field :growth_habit %>
+  </div>
+  <div class="field">
+    <%= f.label :annual_biennial_perennial %><br>
+    <%= f.text_field :annual_biennial_perennial %>
+  </div>
+  <div class="field">
+    <%= f.label :toxicity %><br>
+    <%= f.text_field :toxicity %>
+  </div>
+  <div class="field">
+    <%= f.label :medical_uses %><br>
+    <%= f.text_field :medical_uses %>
+  </div>
+  <div class="field">
+    <%= f.label :culinary_uses %><br>
+    <%= f.text_field :culinary_uses %>
+  </div>
+  <div class="field">
+    <%= f.label :ornamental_uses %><br>
+    <%= f.text_field :ornamental_uses %>
+  </div>
+  <div class="field">
+    <%= f.label :other_uses %><br>
+    <%= f.text_field :other_uses %>
+  </div>
+  <div class="field">
+    <%= f.label :status_local %><br>
+    <%= f.text_field :status_local %>
+  </div>
+  <div class="field">
+    <%= f.label :status_state %><br>
+    <%= f.text_field :status_state %>
+  </div>
+  <div class="field">
+    <%= f.label :status_us %><br>
+    <%= f.text_field :status_us %>
+  </div>
+  <div class="field">
+    <%= f.label :status_global %><br>
+    <%= f.text_field :status_global %>
+  </div>
+  <div class="field">
+    <%= f.label :ecr %><br>
+    <%= f.text_field :ecr %>
+  </div>
+  <div class="field">
+    <%= f.label :hhcp %><br>
+    <%= f.text_field :hhcp %>
+  </div>
+  <div class="field">
+    <%= f.label :leb %><br>
+    <%= f.text_field :leb %>
+  </div>
+  <div class="field">
+    <%= f.label :uwb %><br>
+    <%= f.text_field :uwb %>
+  </div>
+  <div class="field">
+    <%= f.label :wsp %><br>
+    <%= f.text_field :wsp %>
+  </div>
+  <div class="field">
+    <%= f.label :ar %><br>
+    <%= f.text_field :ar %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :plant_details
   root 'plants#index'
   get "/pages/:page" => "pages#show"
   resources :plants

@@ -1,0 +1,73 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Plant Details</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tsn</th>
+      <th>Common name</th>
+      <th>Native</th>
+      <th>Invasive</th>
+      <th>Typical habitat</th>
+      <th>Typical flowering time</th>
+      <th>Typical fruiting time</th>
+      <th>Growth habit</th>
+      <th>Annual biennial perennial</th>
+      <th>Toxicity</th>
+      <th>Medical uses</th>
+      <th>Culinary uses</th>
+      <th>Ornamental uses</th>
+      <th>Other uses</th>
+      <th>Status local</th>
+      <th>Status state</th>
+      <th>Status us</th>
+      <th>Status global</th>
+      <th>Ecr</th>
+      <th>Hhcp</th>
+      <th>Leb</th>
+      <th>Uwb</th>
+      <th>Wsp</th>
+      <th>Ar</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @plant_details.each do |plant_detail| %>
+      <tr>
+        <td><%= plant_detail.tsn %></td>
+        <td><%= plant_detail.common_name %></td>
+        <td><%= plant_detail.native %></td>
+        <td><%= plant_detail.invasive %></td>
+        <td><%= plant_detail.typical_habitat %></td>
+        <td><%= plant_detail.typical_flowering_time %></td>
+        <td><%= plant_detail.typical_fruiting_time %></td>
+        <td><%= plant_detail.growth_habit %></td>
+        <td><%= plant_detail.annual_biennial_perennial %></td>
+        <td><%= plant_detail.toxicity %></td>
+        <td><%= plant_detail.medical_uses %></td>
+        <td><%= plant_detail.culinary_uses %></td>
+        <td><%= plant_detail.ornamental_uses %></td>
+        <td><%= plant_detail.other_uses %></td>
+        <td><%= plant_detail.status_local %></td>
+        <td><%= plant_detail.status_state %></td>
+        <td><%= plant_detail.status_us %></td>
+        <td><%= plant_detail.status_global %></td>
+        <td><%= plant_detail.ecr %></td>
+        <td><%= plant_detail.hhcp %></td>
+        <td><%= plant_detail.leb %></td>
+        <td><%= plant_detail.uwb %></td>
+        <td><%= plant_detail.wsp %></td>
+        <td><%= plant_detail.ar %></td>
+        <td><%= link_to 'Show', plant_detail %></td>
+        <td><%= link_to 'Edit', edit_plant_detail_path(plant_detail) %></td>
+        <td><%= link_to 'Destroy', plant_detail, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Plant detail', new_plant_detail_path %>
