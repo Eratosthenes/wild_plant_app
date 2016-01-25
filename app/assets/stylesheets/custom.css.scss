@@ -1,28 +1,35 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+*{ color: white; }
+
 body
-{ background: image-url('green_cup.png');
+{ background: image-url('dark_forest.jpg');
 }
 
 label
 { border-radius: 5px;
+  background-color: rgba(5,5,5, 0.7) !important;
   color: black;
+  margin: 8px;
 }
 
 /*{ background-color: #337ab7;*/
 label:hover
-{ background-color: gray;
+{ background-color: rgba(245,245,245,0.7) !important;
   color: white;
 }
 
 a
 { color: white;
 }
+a:hover
+{ color: white;
+}
 
 #subtitle
-{ text-shadow: 2px 2px 3px gray;
-  color: black;
+{ text-shadow: 2px 2px 3px black;
+  color: white;
 }
 
 .well
@@ -33,6 +40,7 @@ a
 h1
 { text-align: center;
   text-shadow: 2px 2px 3px black;
+  font-family: serif;
 }
 
 .hidden
@@ -59,7 +67,6 @@ h1
 .result_link
 { //text-shadow: 2px 2px 3px gray;
   text-decoration: underline;
-  color: black;
 }
 
 .list-group, .features, .buttons, .results_table
@@ -67,10 +74,30 @@ h1
   margin: auto;
 }
 
+.list-group-item
+{ background-color: rgba(5,5,5,0.4);
+  color: white !important;
+}
+
+.list-group-item:hover
+{ color:black !important;
+}
+
 .buttons
 { padding-top: 10px;
   padding-bottom: 10px;
   margin-bottom: 10px;
+}
+
+.btn
+{ background-color: black;
+  border: 1px solid white;
+}
+
+.btn:hover
+{ background-color: white;
+  color: black;
+  border: 1px solid black;
 }
 
 #first_back, #back

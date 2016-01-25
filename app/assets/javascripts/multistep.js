@@ -16,6 +16,9 @@ $(function(){
 
   $('#features').children().click(function(){
     $(this).addClass('list-group-item-success');
+    $(this).css({ 'background-color': 'rgba(245,245,245,0.4)',
+      'color' : 'black'
+    })
   });
 
   var multiStep = function(idx){
