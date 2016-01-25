@@ -1,45 +1,37 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-*{ color: white; }
-
 body
-{ background: image-url('dark_forest.jpg');
+{ //background: image-url('dark_forest.jpg');
 }
 
 label
 { border-radius: 5px;
-  background-color: rgba(5,5,5, 0.7) !important;
+  //background-color: rgba(5,5,5, 0.7) !important;
   color: black;
   margin: 8px;
 }
 
 /*{ background-color: #337ab7;*/
 label:hover
-{ background-color: rgba(245,245,245,0.7) !important;
+{ background-color: rgba(150,150,150,0.7) !important;
   color: white;
-}
-
-a
-{ color: white;
-}
-a:hover
-{ color: white;
 }
 
 #subtitle
-{ text-shadow: 2px 2px 3px black;
-  color: white;
+{ //text-shadow: 2px 2px 3px gray;
+  text-align: center;
+  font-size: 18px;
 }
 
 .well
-{ background-color: rgba(5, 5, 5, 0.4);
-  color: white;
+{ //background-color: rgba(5, 5, 5, 0.4);
+  //color: white;
 }
 
 h1
 { text-align: center;
-  text-shadow: 2px 2px 3px black;
+  //text-shadow: 2px 2px 3px black;
   font-family: serif;
 }
 
@@ -56,12 +48,12 @@ h1
 { text-align: center;
   margin-top: -5px;
   margin-bottom: 10px;
-  text-shadow: 2px 2px 3px gray;
+  //text-shadow: 2px 2px 3px gray;
 }
 
 .back_to_search
 { margin-left: 10px;
-  text-shadow: 2px 2px 3px gray;
+  //text-shadow: 2px 2px 3px gray;
 }
 
 .result_link
@@ -69,18 +61,9 @@ h1
   text-decoration: underline;
 }
 
-.list-group, .features, .buttons, .results_table
+.list-group, .features, .buttons, .results_table, .container
 { width: 80%;
   margin: auto;
-}
-
-.list-group-item
-{ background-color: rgba(5,5,5,0.4);
-  color: white !important;
-}
-
-.list-group-item:hover
-{ color:black !important;
 }
 
 .buttons
@@ -89,21 +72,15 @@ h1
   margin-bottom: 10px;
 }
 
-.btn
-{ background-color: black;
-  border: 1px solid white;
-}
-
-.btn:hover
-{ background-color: white;
-  color: black;
-  border: 1px solid black;
-}
-
 #first_back, #back
 { float:left;
 }
 
 #next, #finish
 { float:right;
+}
+
+.pages_back
+{ margin: 10px;
+  text-align: center;
 }
