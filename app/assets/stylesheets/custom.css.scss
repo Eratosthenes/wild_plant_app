@@ -5,11 +5,19 @@ body
 { //background: image-url('dark_forest.jpg');
 }
 
+.image
+{ margin-right: 10px;
+  border: 1px solid rgb(205,205,205);
+  height: 50px;
+  width: 50px;
+}
+
 label
 { border-radius: 5px;
   //background-color: rgba(5,5,5, 0.7) !important;
   color: black;
   margin: 8px;
+  padding: 0px !important;
 }
 
 /*{ background-color: #337ab7;*/
@@ -33,6 +41,11 @@ h1
 { text-align: center;
   //text-shadow: 2px 2px 3px black;
   font-family: serif;
+}
+
+.field p
+{ text-align: center;
+  font-size: 18px;
 }
 
 .hidden
@@ -82,5 +95,6 @@ h1
 
 .pages_back
 { margin: 10px;
+  font-size: 18px;
   text-align: center;
 }

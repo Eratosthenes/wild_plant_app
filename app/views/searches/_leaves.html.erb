@@ -1,11 +1,26 @@
 <div class="field">
   <p><strong>Leaf Type</strong></p>
   <ul class="list-group">
-    <label class="list-group-item"><%=s.radio_button :leaf_type, 'simple' %> Simple</label>
-    <label class="list-group-item"><%=s.radio_button :leaf_type, 'compound' %> Compound</label>
-    <label class="list-group-item"><%=s.radio_button :leaf_type, 'needle' %> Needle</label>
-    <label class="list-group-item"><%=s.radio_button :leaf_type, 'scale' %> Scale</label>
-    <label class="list-group-item"><%=s.radio_button :leaf_type, 'thread-like' %> Thread-like</label><br>
+    <label class="list-group-item">
+      <%= image_tag 'leaf_simple.jpg', class: 'image' %>
+      <%=s.radio_button :leaf_type, 'simple' %> Simple
+    </label>
+    <label class="list-group-item">
+      <%= image_tag 'leaf_compound.jpg', class: 'image' %>
+      <%=s.radio_button :leaf_type, 'compound', class: 'radio_button' %> Compound
+    </label>
+    <label class="list-group-item">
+      <%= image_tag 'leaf_needle.jpg', class: 'image' %>
+      <%=s.radio_button :leaf_type, 'needle' %> Needle
+    </label>
+    <label class="list-group-item">
+      <%= image_tag 'leaf_scale.jpg', class: 'image' %>
+      <%=s.radio_button :leaf_type, 'scale' %> Scale
+    </label>
+    <label class="list-group-item">
+      <%= image_tag 'leaf_scale.jpg', class: 'image' %>
+      <%=s.radio_button :leaf_type, 'thread-like' %> Thread-like
+    </label>
   </ul>
 </div>
 
