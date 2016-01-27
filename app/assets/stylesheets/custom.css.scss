@@ -12,6 +12,11 @@ body
   width: 50px;
 }
 
+.image:hover
+{ height: 100px;
+  width: 100px;
+}
+
 label
 { border-radius: 5px;
   //background-color: rgba(5,5,5, 0.7) !important;
